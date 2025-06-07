@@ -16,7 +16,7 @@
     <body>               
             <h1>Contadores</h1>             
             <button onclick="adicionar()"></button>    
-            <button onclick="adicionar()"></button> 
+            <button id="button" onclick="adicionar()"></button> 
 
         
         <script>
@@ -29,7 +29,13 @@
             function render(){
                 document.querySelector("button").innerText = `total ${numero}`
             }
+
+            function render2(){
+                document.querySelector("#button").innerText = `total ${numero}`
             render()
+            render2()
+
+            
         </script>      
     </body>
 </html>
