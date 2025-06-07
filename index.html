@@ -16,13 +16,17 @@
     <body>               
             <h1>Contadores</h1>             
             <button onclick="adicionar()"></button>    
-            <button id="outro" onclick="adicionar()"></button> 
+            <button id="outro" onclick="adicionar2()"></button> 
 
         
         <script>
             let numero =0
 
             function adicionar(){
+                numero++
+                render()
+            }
+            function adicionar2(){
                 numero++
                 render()
             }
