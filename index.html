@@ -20,14 +20,15 @@
 
         
         <script>
-            let numero =0
+            let numero = 0
+            let numero2 = 0
 
             function adicionar(){
                 numero++
                 render()
             }
             function adicionar2(){
-                numero++
+                numero2++
                 render2()
             }
             
@@ -36,7 +37,7 @@
             }
 
             function render2(){
-                document.querySelector("#outro").innerText = `total ${numero}`
+                document.querySelector("#outro").innerText = `total ${numero2}`
             }
             render2()
             render()
