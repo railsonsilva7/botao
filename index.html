@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador</title>
+        <style>
+            button {
+                width: 100px;
+                height: 50px;
+                font-size: 40px;
+
+
+            }       
+        </style>
+    </head>
+    <body>
+        
+        <button onclick="adicionar()">0</button> 
+        <script>
+            let numero = 0
+
+            function adicionar(){
+                numero++
+                render()
+            }
+
+            function render(){
+                document.querySelector("button").innerText = numero
+            }
+            render()
+        </script>      
+    </body>
+</html>
